@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>display: flex</h1>
+    <div class="flex-cont">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>display: inline-flex</h1>
+    <div class="flex-cont1">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>justify-content: flex-end;</h1>
+    <div class="flex-cont2">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>justify-content: space-between;</h1>
+    <div class="flex-cont3">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>justify-content: space-around;</h1>
+    <p>add space to all objects on the left and right</p>
+    <div class="flex-cont4">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1><b>align-items:</b> baseline;</h1>
+    <p><b>Basic:</b> stretch, normal 
+        <b>Positional:</b> center, flex-start, flex-end 
+        <b>Baseline:</b> first baseline, last baseline 
+        <b>Alignment only:</b> safe center, unsafe center 
+        <b>Global values:</b> inherit, initial, revert, revert-layer, unset</p>
+    <div class="flex-cont align-item">
+        <div class="block-column">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>flex-wrap: wrap;</h1>
+    <p>when you re-size site blocks will move; flex-wrap: wrap-reverse - the same, but reverse</p>
+    <div class="flex-cont6">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>align-self</h1>
+    <p>global modification: align-items: baseline; box 1 - align-self: flex-end; box 3 - align-self: center; </p>
+    <div class="flex-cont align-item">
+        <div class="block-column block-modify1">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2 big box</div>
+        </div>
+        <div class="block-column block-modify2">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>order:</h1>
+    <p>box 1 - order: 3; box 2 - order: 2; box 3 - order: 1; You can change the order of the output </p>
+    <div class="flex-cont align-item">
+        <div class="block-column block-modify3">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column block-modify4">
+         <div class="block-item">2 big box</div>
+        </div>
+        <div class="block-column block-modify5">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>flex-basis</h1>
+    <p>flex-basis: 300px;</p>
+    <div class="flex-cont align-item">
+        <div class="block-column flex-basis">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column flex-basis">
+         <div class="block-item">2 big box</div>
+        </div>
+        <div class="block-column flex-basis">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>flex-grow</h1>
+    <p>flex-grow: 1;(standart 0 - false) indicates whether the block can be larger than the specified base width(flex-basis)</p>
+    <div class="flex-cont align-item">
+        <div class="block-column colum-flex-grow flex-basis">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column colum-flex-grow flex-basis">
+         <div class="block-item">2 big box</div>
+        </div>
+        <div class="block-column colum-flex-grow flex-basis">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>flex-shrink</h1>
+    <p>flex-shrink: 1;(standart 0 - false) indicates whether the block can be smaller than the specified base width(flex-basis)</p>
+    <div class="flex-cont align-item">
+        <div class="block-column colum-flex-shrink flex-basis">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column colum-flex-shrink flex-basis">
+         <div class="block-item">2 big box</div>
+        </div>
+        <div class="block-column colum-flex-shrink flex-basis">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>flex:</h1>
+    <p>flex: 0 1 300px; the same as  = flex-grow: 0; flex-shrink: 1; flex-basis: 300px;</p>
+    <div class="flex-cont align-item">
+        <div class="block-column flex">
+         <div class="block-item sizeMiniBlock">1</div>
+        </div>
+        <div class="block-column flex">
+         <div class="block-item">2 big box</div>
+        </div>
+        <div class="block-column flex">
+         <div class="block-item sizeMiniBlock">3</div>
+        </div>
+    </div>
+    <h1>flex-direction: row;</h1>
+    <p>row - standart, lines up horizontally from left to right</p>
+    <div class="flex-cont align-item">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>flex-direction: row;</h1>
+    <p>row - standart, lines up horizontally from left to right</p>
+    <div class="flex-cont align-item flex-direction-row">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>flex-direction: row-reverse;</h1>
+    <p>row-reverse the reversed version of row, lines up horizontally from right to left</p>
+    <div class="flex-cont align-item flex-direction-row-reverse">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>flex-direction: column;</h1>
+    <p></p>
+    <div class="flex-cont flex-column">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    <h1>flex-direction: column-reverse;</h1>
+    <p></p>
+    <div class="flex-cont flex-column-reverse">
+        <div class="block-column">
+         <div class="block-item">1</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">2</div>
+        </div>
+        <div class="block-column">
+         <div class="block-item">3</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
