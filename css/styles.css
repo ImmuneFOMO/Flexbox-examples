@@ -1,0 +1,79 @@
+/*display start*/
+.flex-cont {
+  display: flex;
+  border: 20px solid #c9c692;
+  margin: 0px 0px 20px 0px;
+}
+/*display end*/
+
+/*justify-content start*/
+.flex-cont-justify {
+  display: flex;
+  justify-content: center;
+  border: 20px solid #c9c692;
+  margin: 0px 0px 20px 0px;
+}
+/*justify-content end*/
+
+/*align-items start*/
+.align-item {
+  display: flex;
+  border: 20px solid #c9c692;
+  margin: 0px 0px 20px 0px;
+  align-items: stretch;
+}
+/*align-items end*/
+
+/*flex-wrap start*/
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  border: 20px solid #c9c692;
+  margin: 0px 0px 20px 0px;
+  max-width: 330px;
+}
+/*flex-wrap end*/
+
+.block-column {
+  border: 20px solid #4f475f;
+}
+
+.block-item {
+  background-color: rgb(8, 138, 138);
+  padding: 50px;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700px;
+}
+
+.sizeMiniBlock {
+  height: 10px;
+}
+
+.block-modify1 {
+  align-self: flex-end;
+}
+.block-modify2 {
+  align-self: center;
+}
+.block-modify3 {
+  order: 3;
+}
+.block-modify4 {
+  order: 2;
+}
+.block-modify5 {
+  order: 1;
+}
+.flex-basis {
+  flex-basis: 400px;
+}
+.colum-flex-grow {
+  flex-grow: 1;
+}
+.colum-flex-shrink {
+  flex-shrink: 1;
+}
+.flex {
+  flex: 0 1 300px;
+}

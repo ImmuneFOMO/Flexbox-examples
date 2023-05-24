@@ -1,247 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>display: flex</h1>
-    <div class="flex-cont">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <h1>
+      display:
+      <select id="display">
+        <option value="flex">flex</option>
+        <option value="inline-flex">inline-flex</option>
+      </select>
+    </h1>
+    <div id="flexContainer" class="flex-cont">
+      <div class="block-column">
+        <div class="block-item">1</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">2</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">3</div>
+      </div>
     </div>
-    <h1>display: inline-flex</h1>
-    <div class="flex-cont1">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
+    <h1>
+      justify-content:
+      <select id="justify-content">
+        <option value="">center</option>
+        <option value="start">start</option>
+        <option value="end">end</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+        <option value="space-evenly">space-evenly</option>
+        <option value="stretch">stretch</option>
+      </select>
+    </h1>
+    <p>
+      <b>Center</b>-Pack items in the center; <b>Start</b>-Pack items at the
+      start; <b>End</b>-Pack items at the end; <b>Flex-start</b>-Pack flex items
+      at the start; <b>Flex-end</b>-Pack flex items at the start;
+      <b>Left</b>-Pack items from the left; <b>Right</b>-Pack items from the
+      right; <b>Space-between</b>-put first item to the start, and last to the
+      end, and put between all items space; <b>Space-around</b>-Distribute items
+      evenly Items have a half-size space on either end;
+      <b>Space-evenly</b>-Distribute items evenly Items have equal space around
+      them; <b>Stretch</b>-Distribute items evenly Stretch 'auto'-sized items to
+      fit the container;
+    </p>
+    <div class="flex-cont-justify" id="flex-cont-justify">
+      <div class="block-column">
+        <div class="block-item">1</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">2</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">3</div>
+      </div>
     </div>
-    <h1>justify-content: flex-end;</h1>
-    <div class="flex-cont2">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
+    <h1>
+      align-items:
+      <select id="align-items">
+        <option value="">stretch</option>
+        <option value="normal">normal</option>
+        <option value="center">center</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="baseline">baseline</option>
+        <option value="first baseline">first baseline</option>
+        <option value="last baseline">last baseline</option>
+        <option value="safe center">safe center</option>
+        <option value="unsafe center">unsafe center</option>
+        <option value="inherit">inherit</option>
+        <option value="initial">initial</option>
+        <option value="revert">revert</option>
+        <option value="revert-layer">revert-layer</option>
+        <option value="unset">unset</option>
+      </select>
+    </h1>
+    <p>
+      <b>Normal</b>-Align items normally; <b>Stretch</b>-Stretch items to fit
+      the container; <b>Center</b>-Pack items around the center;
+      <b>Start</b>-Pack items from the start; <b>End</b>-Pack items from the
+      end; <b>Flex-start</b>- Pack flex items from the start;
+      <b>Flex-end</b>-Pack flex items from the end; <b>Self-start</b>-Pack flex
+      items from the start; <b>Self-end</b>-Pack flex items from the end;
+      <b>Baseline</b>-Align items to the baseline; <b>First baseline</b>-Align
+      items to the first baseline; <b>Last baseline</b>- Align items to the last
+      baseline (overflow alignment for positional alignment only);
+      <b>Safe center</b>-Align items safely around the center;
+      <b>Unsafe center</b>-Align items unsafely around the center;
+      <b>Inherit</b>- Inherits the alignment from the parent element;
+      <b>Initial</b>-Sets the alignment to its default value;
+      <b>Revert</b>-Reverts to the parent element's alignment;
+      <b>Revert-layer</b>-Reverts to the alignment of the parent stacking
+      context; <b>Unset</b>-Resets the alignment to its initial value;
+    </p>
+    <div class="align-item" id="align-item">
+      <div class="block-column">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">2</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
-    <h1>justify-content: space-between;</h1>
-    <div class="flex-cont3">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
+    <h1>
+      flex-wrap:
+      <select id="flex-wrap">
+        <option value="wrap">wrap</option>
+        <option value="nowrap">nowrap</option>
+        <option value="wrap-reverse">wrap-reverse</option>
+      </select>
+    </h1>
+    <p>
+      <b>Nowrap</b>-Items are not wrapped and displayed in a single line;
+      <b>Wrap</b>-Items are wrapped to the next line when necessary;
+      <b>Wrap-reverse</b>-Items are wrapped to the next line in reverse order;
+    </p>
+    <div class="flex-wrap" id="flex-wrap-container">
+      <div class="block-column">
+        <div class="block-item">1</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">2</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">3</div>
+      </div>
     </div>
-    <h1>justify-content: space-around;</h1>
-    <p>add space to all objects on the left and right</p>
-    <div class="flex-cont4">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
-    </div>
-    <h1><b>align-items:</b> baseline;</h1>
-    <p><b>Basic:</b> stretch, normal 
-        <b>Positional:</b> center, flex-start, flex-end 
-        <b>Baseline:</b> first baseline, last baseline 
-        <b>Alignment only:</b> safe center, unsafe center 
-        <b>Global values:</b> inherit, initial, revert, revert-layer, unset</p>
-    <div class="flex-cont align-item">
-        <div class="block-column">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
-    </div>
-    <h1>flex-wrap: wrap;</h1>
-    <p>when you re-size site blocks will move; flex-wrap: wrap-reverse - the same, but reverse</p>
-    <div class="flex-cont6">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
+    <h1>
+      flex-direction:
+      <select id="flex-direction">
+        <option value="row">row</option>
+        <option value="row-reverse">row-reverse</option>
+        <option value="column">column</option>
+        <option value="column-reverse">column-reverse</option>
+      </select>
+    </h1>
+    <p>row - standart, lines up horizontally from left to right</p>
+    <div class="align-item" id="flex-direction-container">
+      <div class="block-column">
+        <div class="block-item">1</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">2</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">3</div>
+      </div>
     </div>
     <h1>align-self</h1>
-    <p>global modification: align-items: baseline; box 1 - align-self: flex-end; box 3 - align-self: center; </p>
-    <div class="flex-cont align-item">
-        <div class="block-column block-modify1">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2 big box</div>
-        </div>
-        <div class="block-column block-modify2">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
+    <p>
+      Same as align-items, but changes the value to a specific object.
+      <b>Global modification</b>: align-items: baseline; <b>Box 1</b> -
+      align-self: flex-end; <b>Box 3</b> - align-self: center;
+    </p>
+    <div class="align-item">
+      <div class="block-column block-modify1">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column">
+        <div class="block-item">2 big box</div>
+      </div>
+      <div class="block-column block-modify2">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
     <h1>order:</h1>
-    <p>box 1 - order: 3; box 2 - order: 2; box 3 - order: 1; You can change the order of the output </p>
+    <p>
+      <b>Box 1</b> - order: 3; <b>Box 2</b> - order: 2; <b>Box 3</b> - order: 1;
+      You can change the order of the output.
+    </p>
     <div class="flex-cont align-item">
-        <div class="block-column block-modify3">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column block-modify4">
-         <div class="block-item">2 big box</div>
-        </div>
-        <div class="block-column block-modify5">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
+      <div class="block-column block-modify3">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column block-modify4">
+        <div class="block-item">2 big box</div>
+      </div>
+      <div class="block-column block-modify5">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
     <h1>flex-basis</h1>
-    <p>flex-basis: 300px;</p>
-    <div class="flex-cont align-item">
-        <div class="block-column flex-basis">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column flex-basis">
-         <div class="block-item">2 big box</div>
-        </div>
-        <div class="block-column flex-basis">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
+    <p>
+      flex-basis: 300px; you can put any number of pixels, it will change the
+      initial main size of a flex item.
+    </p>
+    <div class="align-item">
+      <div class="block-column flex-basis">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column flex-basis">
+        <div class="block-item">2 big box</div>
+      </div>
+      <div class="block-column flex-basis">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
     <h1>flex-grow</h1>
-    <p>flex-grow: 1;(standart 0 - false) indicates whether the block can be larger than the specified base width(flex-basis)</p>
-    <div class="flex-cont align-item">
-        <div class="block-column colum-flex-grow flex-basis">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column colum-flex-grow flex-basis">
-         <div class="block-item">2 big box</div>
-        </div>
-        <div class="block-column colum-flex-grow flex-basis">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
+    <p>
+      flex-grow: 1;(standart 0 - false) indicates whether the block can be
+      larger than the specified base width(flex-basis)
+    </p>
+    <div class="align-item">
+      <div class="block-column colum-flex-grow flex-basis">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column colum-flex-grow flex-basis">
+        <div class="block-item">2 big box</div>
+      </div>
+      <div class="block-column colum-flex-grow flex-basis">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
     <h1>flex-shrink</h1>
-    <p>flex-shrink: 1;(standart 0 - false) indicates whether the block can be smaller than the specified base width(flex-basis)</p>
-    <div class="flex-cont align-item">
-        <div class="block-column colum-flex-shrink flex-basis">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column colum-flex-shrink flex-basis">
-         <div class="block-item">2 big box</div>
-        </div>
-        <div class="block-column colum-flex-shrink flex-basis">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
+    <p>
+      flex-shrink: 1;(standart 0 - false) indicates whether the block can be
+      smaller than the specified base width(flex-basis)
+    </p>
+    <div class="align-item">
+      <div class="block-column colum-flex-shrink flex-basis">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column colum-flex-shrink flex-basis">
+        <div class="block-item">2 big box</div>
+      </div>
+      <div class="block-column colum-flex-shrink flex-basis">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
     <h1>flex:</h1>
-    <p>flex: 0 1 300px; the same as  = flex-grow: 0; flex-shrink: 1; flex-basis: 300px;</p>
+    <p>
+      flex: 0 1 300px; the same as = flex-grow: 0; flex-shrink: 1; flex-basis:
+      300px;
+    </p>
     <div class="flex-cont align-item">
-        <div class="block-column flex">
-         <div class="block-item sizeMiniBlock">1</div>
-        </div>
-        <div class="block-column flex">
-         <div class="block-item">2 big box</div>
-        </div>
-        <div class="block-column flex">
-         <div class="block-item sizeMiniBlock">3</div>
-        </div>
+      <div class="block-column flex">
+        <div class="block-item sizeMiniBlock">1</div>
+      </div>
+      <div class="block-column flex">
+        <div class="block-item">2 big box</div>
+      </div>
+      <div class="block-column flex">
+        <div class="block-item sizeMiniBlock">3</div>
+      </div>
     </div>
-    <h1>flex-direction: row;</h1>
-    <p>row - standart, lines up horizontally from left to right</p>
-    <div class="flex-cont align-item">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
-    </div>
-    <h1>flex-direction: row;</h1>
-    <p>row - standart, lines up horizontally from left to right</p>
-    <div class="flex-cont align-item flex-direction-row">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
-    </div>
-    <h1>flex-direction: row-reverse;</h1>
-    <p>row-reverse the reversed version of row, lines up horizontally from right to left</p>
-    <div class="flex-cont align-item flex-direction-row-reverse">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
-    </div>
-    <h1>flex-direction: column;</h1>
-    <p></p>
-    <div class="flex-cont flex-column">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
-    </div>
-    <h1>flex-direction: column-reverse;</h1>
-    <p></p>
-    <div class="flex-cont flex-column-reverse">
-        <div class="block-column">
-         <div class="block-item">1</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">2</div>
-        </div>
-        <div class="block-column">
-         <div class="block-item">3</div>
-        </div>
-    </div>
-    </div>
-</body>
+  </body>
 </html>
